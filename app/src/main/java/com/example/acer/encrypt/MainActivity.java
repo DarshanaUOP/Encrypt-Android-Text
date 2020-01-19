@@ -32,16 +32,11 @@ public class MainActivity extends ActionBarActivity {
     EditText plaintxt,enctxt,dectxt;
     TextView button,massage;
 
-//    public AESHelper aESHelper;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        aESHelper = new AESHelper();
 
         plaintxt = (EditText)findViewById(R.id.plaintxt);
         enctxt =(EditText)findViewById(R.id.encTxt);
@@ -99,13 +94,11 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return false;
     }
 
     @Override
